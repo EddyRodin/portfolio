@@ -25,14 +25,14 @@ export default function Navbar() {
                     gap: '2rem',
                     borderRadius: '9999px' // Pill shape
                 }}>
-                    <Link href="#about" style={{ fontWeight: 500 }}>À propos</Link>
-                    <Link href="#skills" style={{ fontWeight: 500 }}>Compétences</Link>
-                    <Link href="#projects" style={{ fontWeight: 500 }}>Projets</Link>
+                    <Link href="#about" style={{ fontWeight: 500 }}>Expertise</Link>
+                    <Link href="#skills" style={{ fontWeight: 500 }}>Technologies</Link>
+                    <Link href="#projects" style={{ fontWeight: 500 }}>Réalisations</Link>
                     <Link href="#contact" style={{ fontWeight: 500 }}>Contact</Link>
                 </nav>
                 <div style={{ paddingRight: '1rem' }}>
                     <Link href="#contact" className="btn-primary" style={{ padding: '0.5rem 1.25rem' }}>
-                        Me recruter
+                        Collaborer
                     </Link>
                 </div>
             </div>

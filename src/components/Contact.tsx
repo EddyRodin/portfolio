@@ -8,7 +8,7 @@ export default function Contact() {
                 textAlign: 'center'
             }}>
                 <h2 className="section-title" style={{ marginBottom: '1.5rem' }}>
-                    Travaillons <span className="text-gradient">Ensemble</span>
+                    Prenons <span className="text-gradient">Contact</span>
                 </h2>
 
                 <p style={{
@@ -18,51 +18,50 @@ export default function Contact() {
                     maxWidth: '600px',
                     margin: '0 auto 3rem'
                 }}>
-                    Je suis actuellement à la recherche de nouvelles opportunités. Que vous ayez une question, 
-                    une proposition de projet ou que vous souhaitiez simplement dire bonjour, ma boîte de réception est toujours ouverte.
+                    Je suis à l'écoute de nouvelles opportunités de collaboration. Qu'il s'agisse d'un projet d'envergure, 
+                    d'un besoin de conseil technique ou d'une simple prise de contact, vos messages sont les bienvenus.
                 </p>
 
-                {/* Formulaire configuré pour Formspree */}
                 <form 
                     action="https://formspree.io/f/ditrodin1702@gmail.com" 
                     method="POST"
                     style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', maxWidth: '500px', margin: '0 auto' }}
                 >
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'left' }}>
-                        <label htmlFor="name" style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Nom</label>
+                        <label htmlFor="name" style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Nom / Entreprise</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
                             required
-                            placeholder="Votre nom"
+                            placeholder="Votre nom ou société"
                             style={{
                                 width: '100%',
                                 padding: '0.75rem 1rem',
                                 borderRadius: '0.5rem',
-                                background: 'rgba(17, 24, 39, 0.5)',
+                                background: 'var(--bg-primary)',
                                 border: '1px solid var(--border-color)',
-                                color: 'white',
+                                color: 'var(--text-primary)',
                                 fontFamily: 'var(--font-body)'
                             }}
                         />
                     </div>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'left' }}>
-                        <label htmlFor="email" style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Email</label>
+                        <label htmlFor="email" style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Adresse Email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             required
-                            placeholder="votre@exemple.com"
+                            placeholder="contact@entreprise.com"
                             style={{
                                 width: '100%',
                                 padding: '0.75rem 1rem',
                                 borderRadius: '0.5rem',
-                                background: 'rgba(17, 24, 39, 0.5)',
+                                background: 'var(--bg-primary)',
                                 border: '1px solid var(--border-color)',
-                                color: 'white',
+                                color: 'var(--text-primary)',
                                 fontFamily: 'var(--font-body)'
                             }}
                         />
@@ -75,14 +74,14 @@ export default function Contact() {
                             name="message"
                             required
                             rows={5}
-                            placeholder="Bonjour Rodin, j'aimerais vous parler de..."
+                            placeholder="Veuillez décrire votre projet ou objet de contact..."
                             style={{
                                 width: '100%',
                                 padding: '0.75rem 1rem',
                                 borderRadius: '0.5rem',
-                                background: 'rgba(17, 24, 39, 0.5)',
+                                background: 'var(--bg-primary)',
                                 border: '1px solid var(--border-color)',
-                                color: 'white',
+                                color: 'var(--text-primary)',
                                 fontFamily: 'var(--font-body)',
                                 resize: 'vertical'
                             }}
